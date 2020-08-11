@@ -64,9 +64,48 @@ console.log(dogYears(28));
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-  
+function answer(complete){
+    console.log("Dog gets" ,complete, "food");
+}
+function adultDog(weight){
+    if (weight <= 5){
+        answer(weight*.05);
+    }
+    else if (weight <= 10){
+        answer(weight*.04);
+    }
+    else if (weight <= 15){
+        answer(weight*.03);
+    }
+    else if (weight <= 15){
+        answer(weight*.02);
+    }
+    else{
+        answer(weight*.02);
+    }
+}
 
+function puppy(age,weight){
+    if (age >= .166666 && age <= .3333333){
+        answer(weight*.1);
+    }
+    else if (age > .3333333 && age <= .583333){
+        answer(weight*.05);
+    }
+    else {
+        answer(weight*.04);
+    }
+}
 
+function foodOutput(age,weight){
+    if (age < 1) {
+        puppy(age,weight);
+    }
+    else {
+        adultDog(weight);
+    }
+}
+foodOutput(1,15);
 
 
 /************************************************************** Task 4 **************************************************************/
