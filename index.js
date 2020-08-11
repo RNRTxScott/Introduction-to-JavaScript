@@ -65,7 +65,7 @@ console.log(dogYears(28));
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
 function answer(complete){
-    console.log("Dog gets" ,complete, "food");
+    console.log("Dog gets" ,complete, "lbs of food");
 }
 function adultDog(weight){
     if (weight <= 5){
