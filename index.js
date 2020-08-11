@@ -31,18 +31,20 @@ if ("1999" == 1999){
 //Task d: Write a function to multiply a*b 
 
 
-function multiplyNumbers(a,b){
+function letters(a,b = 1){
     return a*b;
 }
 
-let c = multiplyNumbers(6,24);
+let c = letters(6,24);
 console.log(c);
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
-
+function dogYears(human,dog = 7){
+    return human*dog;
+}
+console.log(dogYears(28));
 
 
 /************************************************************** Task 3 **************************************************************/
