@@ -64,8 +64,8 @@ console.log(dogYears(28));
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-function answer(complete){
-    console.log("Dog gets" ,complete, "lbs of food");
+function answer(suki){
+    console.log("Dog gets" ,suki, "lbs of food");
 }
 function adultDog(weight){
     if (weight <= 5){
@@ -114,6 +114,17 @@ foodOutput(1,15);
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
+/*function result(final){
+    console.log("You",final);
+}
+
+function pcSays(RPS){
+    if (Math.random <= .33333){
+        console.log(result(final = RPS*2));
+    }
+}
+  
+*/
 
   
   
@@ -122,13 +133,21 @@ foodOutput(1,15);
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
-
+function kmTOmiles(kmNumber,miles){
+    return kmNumber*miles;
+}
+let noodle = kmTOmiles(32,.62137);
+console.log(noodle);
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
 
+function ftTOcm(ftNumber,centi){
+    return ftNumber/centi;
+}
+let smallRuler = ftTOcm(32,.032808);
+console.log(smallRuler);
 
 
 
@@ -137,10 +156,47 @@ foodOutput(1,15);
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+/*function bottleDown(){
+
+    for (let i = 99; i--;);
+    
+    var bottle = Math.round(Math.random());
+    
+    if (bottle === 1){
+    console.log(bottle);
+    }
+}
+    flip (98);
+*/
+function bottleToss(icase,jcase){
 
 
-
-
+for (i = 99 ; i > 0 ; i--) {
+    j = i - 1;
+    if (i != 1) { 
+      icase = "bottles"; 
+    } else { 
+      icase = "bottle";
+    }
+    if (j != 1) {
+      jcase = "bottles";
+    } else {
+      jcase = "bottle";
+    }
+    console.log(icase,-1);
+}
+}
+   /* document.writeln(i + " " + icase + " of beer on the wall,");
+    document.writeln(i + " " + icase + " of beer,");
+    document.writeln("Take 1 down, pass it around,");
+    if (j != 0) {
+      document.writeln(j + " " + jcase + " of beer on the wall.");
+    } else {
+      document.writeln("No more bottles of beer on the wall!");
+    }
+    document.writeln()
+  }*/
+  
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
 //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
@@ -166,8 +222,3 @@ foodOutput(1,15);
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
-
-
-
-
-
